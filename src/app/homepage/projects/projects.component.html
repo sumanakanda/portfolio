@@ -1,0 +1,34 @@
+<div appScrollAnimate
+     [animationClass]="'zoom-on-reload'"
+     [threshold]="0.2" class="py-5 md:py-10">
+
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full flex size-8 animate-bounce text-sky-400">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" />
+  </svg>
+
+  <div class="underline underline-offset-8 text-xl font-bold text-center md:text-3xl text-sky-100 py-10">
+    Projects
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 py-5 mt-10 md:justify-items-center items-center">
+
+    <div *ngFor="let project of allProjects" class="space-y-2 w-full border-2 cursor-pointer border-[#98FAEC] h-auto p-4 rounded-lg hover:scale-105 transform transition duration-20">
+      <div class="space-y-2 h-[200px] md:h-[250px] lg:h-[200px]">
+        <div class="text-sky-400 font-semibold text-base md:text-xl py-5">
+          {{project.title}}
+        </div>
+        <div class="text-justify text-sm md:text-base">
+          {{project.description}}
+        </div>
+      </div>
+      <div class="py-2">
+        <a [href]="project.link" class="bg-sky-500 text-sm md:text-sm py-2 px-4 font-medium text-black hover:text-black rounded-lg" target="_blank">View Project</a>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</div>
+

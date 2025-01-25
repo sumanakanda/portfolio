@@ -1,0 +1,41 @@
+<!--Header-section-->
+<div class="bg-slate-700 flex items-center justify-center w-full" id="header">
+  <div class="container container-screen">
+    <app-top-header></app-top-header>
+    <app-personal-intro></app-personal-intro>
+  </div>
+</div>
+
+<div class="fixed flex flex-col items-center bottom-8 right-8" *ngIf="isScreenLg">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cursor-pointer w-6 h-6 text-white animate-bounce">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+  </svg>
+</div>
+
+<!--Education Section-->
+<div class="bg-sky-900 flex items-center justify-center w-full" id="education">
+  <div class="container container-screen">
+    <app-education></app-education>
+  </div>
+</div>
+
+<!--Achievement Section-->
+<div class="bg-slate-700 flex items-center justify-center w-full" id="certification">
+  <div class="container container-screen">
+    <app-achievement></app-achievement>
+  </div>
+</div>
+
+<!--skill-experience Section-->
+<div class="bg-sky-900 flex items-center justify-center w-full" id="skill">
+  <div class="container container-screen">
+    <app-skill-experience></app-skill-experience>
+  </div>
+</div>
+
+<!--Project Section-->
+<div class="bg-slate-700 flex items-center justify-center w-full" id="projects">
+  <div class="container container-screen">
+    <app-projects></app-projects>
+  </div>
+</div>
